@@ -6,6 +6,7 @@ $db = require __DIR__ . '/db.php';
 $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
+    'defaultRoute' => 'referal',
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
@@ -43,15 +44,22 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
-            'enablePrettyUrl' => true,
+            //'enablePrettyUrl' => true,
             'showScriptName' => false,
+          //  'defaultRoute' => 'referal',
             'rules' => [
+                
             ],
+            
+                
+            
         ],
-        */
+        
+        
     ],
+    
     'params' => $params,
 ];
 

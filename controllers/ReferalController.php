@@ -20,7 +20,8 @@ class ReferalController extends Controller
             $inviter = $u->getInviter();
             
             return $this->render('cabinet', compact('referals', 'myId', 'inviter'));
-        }
+        } 
+        return $this->actionRegistration();
     }
     public function actionRegistration(){
         
